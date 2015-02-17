@@ -13,6 +13,7 @@ class MockDjangoRecorder(object):
 
 
 def get_django_recorder():
+    return MockDjangoRecorder
     try:
         import django
         from django.conf import settings
